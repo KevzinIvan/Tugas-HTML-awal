@@ -35,6 +35,47 @@
             font-size: 16px;
             white-space: pre-wrap;
             margin: 0;
+        } 
+        
+        button {
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .floating-btn {
+            padding: 18px 36px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 
+                box-shadow 0.3s cubic-bezier(.4,2,.6,1),
+                transform 0.3s cubic-bezier(.4,2,.6,1),
+                background 0.2s,
+                color 0.2s;
+        }
+
+        .floating-btn:hover {
+            box-shadow: 0 16px 32px rgba(0,0,0,0.18);
+            transform: translateY(-6px) scale(1.04);
+            background-color: #afb4b8; 
+            color: white; 
         }
     </style>
 </head>
@@ -57,6 +98,13 @@ Simbol impian dan keberanian yang tak pernah padam,
 Dari puncaknya, dunia terasa begitu luas,
 Menggenggam mimpi di tengah awan.
         </pre>
+         <div style="display: flex; justify-content: center;">
+            <a href="kevin.Latihan.html" style="text-decoration: none;">
+                <button class="floating-btn">
+                    Back
+                </button>
+            </a>
+        </div>
     </div>
 </body>
 </html>
