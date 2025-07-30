@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan HTML Kevin</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: white; 
+            border-radius: 15px;
+            width: fit-content;
+            max-width: 600px;
+            padding: 30px 40px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            /* Remove text-align: center; */
+            color: black;
+            font-family: Arial;
+            text-align: left; /* Make sure h1 is left-aligned */
+        }
+
+        img {
+            /* border: 3px solid grey; */ /* Hapus border */
+            border-radius: 20px; /* Rounded square */
+        }
+
+        .gambar-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            font-family: Arial;
+            margin-bottom: 40px;
+        }
+
+        .gambar-item {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            font-family: Arial;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .floating-btn {
+            padding: 18px 36px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 15px;
+            font-size: 16px;
+            font-weight: bold; /* Make text bold */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 
+                box-shadow 0.3s cubic-bezier(.4,2,.6,1),
+                transform 0.3s cubic-bezier(.4,2,.6,1),
+                background 0.2s,
+                color 0.2s;
+        }
+
+        .floating-btn:hover {
+            box-shadow: 0 16px 32px rgba(0,0,0,0.18);
+            transform: translateY(-6px) scale(1.04);
+            background-color: #f0f0f0;
+            color: black; /* Ensure text stays visible */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tentang HTML</h1>
+        <p>HTML adalah singkatan dari <b>HyperText Markup Language</b>. Ini adalah bahasa standar yang digunakan untuk membuat dan merancang halaman web. HTML bukan bahasa pemrograman, melainkan bahasa markup yang digunakan untuk menentukan struktur dan konten halaman web. Dengan kata lain, HTML adalah fondasi dari semua halaman web yang ada di internet.</p>
+        <h1>Fungsi HTML</h1>
+        <p>
+            HTML digunakan untuk:<br>
+            Membuat struktur halaman web, seperti judul, paragraf, daftar, tabel, dan lain-lain.<br>
+            Menandai elemen-elemen konten, seperti gambar, tautan (link), dan video.<br>
+            Bekerja bersama CSS dan JavaScript untuk mengatur tampilan (style) dan interaktivitas halaman web.
+        </p>
+        <h1>Koneksi antar web</h1>
+        <ul>
+            <li><a href="https://www.google.com">Visit Google</a></li>
+            <li><a href="https://www.youtube.com">Visit Youtube</a></li>
+            <li><a href="https://www.tiktok.com">Visit Tiktok</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Attribut Gambar</h1>
+        <div class="gambar-container">
+            <div class="gambar-item">
+                <p><b>Central Park, New York City:</b></p>
+                <img src="CentralPark.jpg" width="300" height="200" alt="Central Park">
+            </div>
+            <div class="gambar-item">
+                <p><b>Empire State Building, New York City:</b></p>
+                <img src="Empirestatebuilding.jpg" width="300" height="200" alt="Empire State Building">
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <a href="puisi.html" style="text-decoration: none;">
+                <button class="floating-btn">
+                    New york city
+                </button>
+            </a>
+        </div>
+        </div>
+
+    <div class="container" style="max-width: 600px; width: 100%;">
+        <h1>Table identitas</h1>
+        <table style="width:100%; border-collapse: collapse;">
+            <tr>
+                <th style="border:1px solid #ccc; padding:8px;">Nama</th>
+                <th style="border:1px solid #ccc; padding:8px;">Kelas</th>
+                <th style="border:1px solid #ccc; padding:8px;">Jurusan</th>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px;">Kevin</td>
+                <td style="border:1px solid #ccc; padding:8px;">X PPLG</td>
+                <td style="border:1px solid #ccc; padding:8px;">PPLG</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px;">Fahril</td>
+                <td style="border:1px solid #ccc; padding:8px;">X PPLG</td>
+                <td style="border:1px solid #ccc; padding:8px;">PPLG</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px;">Chartien</td>
+                <td style="border:1px solid #ccc; padding:8px;">X PPLG</td>
+                <td style="border:1px solid #ccc; padding:8px;">PPLG</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px;">Margana</td>
+                <td style="border:1px solid #ccc; padding:8px;">X PPLG</td>
+                <td style="border:1px solid #ccc; padding:8px;">PPLG</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #ccc; padding:8px;">Farhan</td>
+                <td style="border:1px solid #ccc; padding:8px;">X PPLG</td>
+                <td style="border:1px solid #ccc; padding:8px;">PPLG</td>
+            </tr>
+        </table>
+        </div>
+    
+</body>
+</html>
