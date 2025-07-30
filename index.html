@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Latihan HTML Kevin</title>
+    <title>Masukan Nama</title>
     <style>
         body {
             background-color: #f5f5f5;
@@ -10,183 +10,135 @@
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            height: 100vh; 
         }
 
         .container {
             background-color: white; 
             border-radius: 15px;
-            width: fit-content;
-            max-width: 600px;
-            padding: 30px 40px;
+            width: 100%;
+            max-width: 400px;
+            padding: 40px 32px 32px 32px;
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
-            margin-top: 50px;
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            color: black;
-            font-family: Arial;
-            text-align: left; 
-        }
-
-        img {
-            border-radius: 20px; 
-        }
-
-        .gambar-container {
             display: flex;
-            justify-content: center;
-            gap: 40px;
-            font-family: Arial;
-            margin-bottom: 40px;
+            flex-direction: column;
+            align-items: center;
         }
 
-        .gambar-item {
+        h2 {
             text-align: center;
-        }
-
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-        }
-
-        a {
-            color: black;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        p {
-            font-family: Arial;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: white;
-            color: black;
-            border: 2px solid #4CAF50;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-
-        button:hover {
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        .floating-btn {
-            padding: 18px 36px;
-            background-color: white;
-            color: black;
-            border: none;
-            border-radius: 15px;
-            font-size: 16px;
+            color: #000;
+            font-size: 2rem;
             font-weight: bold;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
-            margin-top: 20px;
-            transition: 
-                box-shadow 0.3s cubic-bezier(.4,2,.6,1),
-                transform 0.3s cubic-bezier(.4,2,.6,1),
-                background 0.2s,
-                color 0.2s;
+            margin-bottom: 24px;
         }
 
-        .floating-btn:hover {
-            box-shadow: 0 16px 32px rgba(0,0,0,0.18);
-            transform: translateY(-6px) scale(1.04);
+        label {
+            font-size: 1rem;
+            color: #000;
+            margin-bottom: 8px;
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            color: #000;
+            width: 100%;
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            border: 1.5px solid #000000;
+            border-radius: 8px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #000000; 
+        }
+
+        input.invalid {
+            border-color: red;
+        }
+
+        .animated-btn {
+            padding: 14px 36px;
+            background-color: #fff;
+            color: #000;
+            border: 2px solid transparent; 
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);  
+            cursor: pointer;
+            transition:
+                background 0.2s,
+                color 0.2s,
+                border-color 0.2s,
+                transform 0.2s cubic-bezier(.4,2,.6,1),
+                box-shadow 0.2s cubic-bezier(.4,2,.6,1);
+            margin: 0 auto;
+            display: block;
+        }
+
+        .animated-btn:hover {
             background-color: #afb4b8; 
-            color: white; 
+            color: #000; 
+            border-color: #afb4b8;
+            transform: translateY(-4px) scale(1.04);
+            box-shadow: 0 16px 32px rgb(199, 202, 204);
+        }
+
+        .animated-btn:active {
+            background-color: #e0e0e0; 
+            color: #000;
+            border-color: #000000;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Tentang HTML</h1>
-        <p>HTML adalah singkatan dari <b>HyperText Markup Language</b>. Ini adalah bahasa standar yang digunakan untuk membuat dan merancang halaman web. HTML bukan bahasa pemrograman, melainkan bahasa markup yang digunakan untuk menentukan struktur dan konten halaman web. Dengan kata lain, HTML adalah fondasi dari semua halaman web yang ada di internet.</p>
-        <h1>Fungsi HTML</h1>
-        <p>
-            HTML digunakan untuk:<br>
-            Membuat struktur halaman web, seperti judul, paragraf, daftar, tabel, dan lain-lain.<br>
-            Menandai elemen-elemen konten, seperti gambar, tautan (link), dan video.<br>
-            Bekerja bersama CSS dan JavaScript untuk mengatur tampilan (style) dan interaktivitas halaman web.
-        </p>
-        <h1>Koneksi antar web</h1>
-        <ul>
-            <li><a href="https://www.google.com">Visit Google</a></li>
-            <li><a href="https://www.youtube.com">Visit Youtube</a></li>
-            <li><a href="https://www.tiktok.com">Visit Tiktok</a></li>
-        </ul>
+        <h2>Selamat datang!</h2>
+        <form id="form" style="width:100%; display:flex; flex-direction:column; align-items:center;" action="kevin.Latihan.html" method="get">
+            <input type="text" id="nama" name="nama" placeholder="Masukkan Nama kamu">
+            <input type="text" id="kelas" name="kelas" placeholder="Masukkan Kelas kamu">
+            <button type="submit" class="animated-btn">Continue</button>
+        </form>
     </div>
 
-    <div class="container">
-        <h1>Attribut Gambar</h1>
-        <div class="gambar-container">
-            <div class="gambar-item">
-                <p><b>Central Park, New York City:</b></p>
-                <img src="CentralPark.jpg" width="300" height="200" alt="Central Park">
-            </div>
-            <div class="gambar-item">
-                <p><b>Empire State Building, New York City:</b></p>
-                <img src="Empirestatebuilding.jpg" width="300" height="200" alt="Empire State Building">
-            </div>
-        </div>
-        <div style="display: flex; justify-content: center;">
-            <a href="puisi.html" style="text-decoration: none;">
-                <button class="floating-btn">
-                    New york city
-                </button>
-            </a>
-        </div>
-        </div>
+    <script>
+        const form = document.getElementById("form");
+        const namaInput = document.getElementById("nama");
+        const kelasInput = document.getElementById("kelas");
 
-    <div class="container" style="max-width: 600px; width: 100%;">
-        <h1>Table identitas</h1>
-        <table style="width:100%; border-collapse: collapse;">
-            <tr>
-                <th style="border:1px solid #ccc; padding:8px;">Nama</th>
-                <th style="border:1px solid #ccc; padding:8px;">Kelas</th>
-                <th style="border:1px solid #ccc; padding:8px;">Jurusan</th>
-            </tr>
-            <tr>
-                <td style="border:1px solid #ccc; padding:8px;">Kevin</td>
-                <td style="border:1px solid #ccc; padding:8px;">X PPLG</td>
-                <td style="border:1px solid #ccc; padding:8px;">PPLG</td>
-            </tr>
-            <tr>
-                <td style="border:1px solid #ccc; padding:8px;">Fahril</td>
-                <td style="border:1px solid #ccc; padding:8px;">X PPLG</td>
-                <td style="border:1px solid #ccc; padding:8px;">PPLG</td>
-            </tr>
-            <tr>
-                <td style="border:1px solid #ccc; padding:8px;">Chartien</td>
-                <td style="border:1px solid #ccc; padding:8px;">X PPLG</td>
-                <td style="border:1px solid #ccc; padding:8px;">PPLG</td>
-            </tr>
-            <tr>
-                <td style="border:1px solid #ccc; padding:8px;">Margana</td>
-                <td style="border:1px solid #ccc; padding:8px;">X PPLG</td>
-                <td style="border:1px solid #ccc; padding:8px;">PPLG</td>
-            </tr>
-            <tr>
-                <td style="border:1px solid #ccc; padding:8px;">Farhan</td>
-                <td style="border:1px solid #ccc; padding:8px;">X PPLG</td>
-                <td style="border:1px solid #ccc; padding:8px;">PPLG</td>
-            </tr>
-        </table>
-        </div>
-    
+        form.addEventListener("submit", function(event) {
+            const nama = namaInput.value.trim();
+            const kelas = kelasInput.value.trim();
+
+            let valid = true;
+
+            // Reset borders
+            namaInput.classList.remove("invalid");
+            kelasInput.classList.remove("invalid");
+
+            // Cek nama dan kelas
+            if (nama !== "Kevin") {
+                namaInput.classList.add("invalid");
+                valid = false;
+            }
+
+            if (kelas !== "X PPLG") {
+                kelasInput.classList.add("invalid");
+                valid = false;
+            }
+
+            // Jika tidak valid, blokir submit
+            if (!valid) {
+                event.preventDefault(); // Jangan lanjut ke kevin.Latihan.html
+            }
+        });
+    </script>
 </body>
 </html>
