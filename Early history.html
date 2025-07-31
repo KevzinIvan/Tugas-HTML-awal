@@ -1,0 +1,77 @@
+<html>
+<head>
+     <style>
+      body {
+        background-color: f5f5f5;
+          margin: 0;
+           padding: 0;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           min-height: 100vh;
+           font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+            background-color: white; 
+            text-align: center;
+            border-radius: 15px;
+            width: fit-content;
+            max-width: 600px;
+            padding: 30px 40px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+            margin-bottom: 30px;
+      }
+
+      button {
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .floating-btn {
+            padding: 18px 36px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 
+                box-shadow 0.3s cubic-bezier(.4,2,.6,1),
+                transform 0.3s cubic-bezier(.4,2,.6,1),
+                background 0.2s,
+                color 0.2s;
+        }
+
+        .floating-btn:hover {
+            box-shadow: 0 16px 32px rgba(0,0,0,0.18);
+            transform: translateY(-6px) scale(1.04);
+            background-color: #afb4b8; 
+            color: white; 
+        }
+    </style>
+    </head>
+    <div class="container">
+        <body>
+            <h1>Early history</h1>
+            <p>The early history of New York City begins with Native American settlements and the arrival of the Dutch, who established a trading post called New Amsterdam in 1624. In 1664, the English took control and renamed it New York. The city played a crucial role during the American Revolution and later became the first capital of the United States. </p>
+               <a href="layout.html" style="text-decoration: none;">
+                <button class="floating-btn">
+                    Back
+                </button>
+        </body>
